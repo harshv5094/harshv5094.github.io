@@ -45,6 +45,8 @@ showLastUpdated = false
 # can be overridden in a page's front-matter
 # TocTitle = "Table of Contents" # default
 
+[markup.goldmark.renderer]
+unsafe = true
 
 [languages]
 [languages.en]
