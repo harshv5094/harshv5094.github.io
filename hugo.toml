@@ -74,8 +74,8 @@ name = "About"
 url = "/about"
 
 [[languages.en.menu.main]]
-identifier = "blog"
-name = "Blog"
+identifier = "posts"
+name = "Posts"
 url = "/posts"
 
 [[languages.en.menu.main]]
