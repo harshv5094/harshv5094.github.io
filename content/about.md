@@ -4,19 +4,19 @@ framed = true
 hideComments = true
 +++
 
-# Introduction
+## Introduction
 
 I'm a developer.\
 I work in JavaScript, HTML, CSS, C, Bash Script.\
 I love neovim and use arch btw.
 
-# Stats
+## Stats
 
 - GitHub Followers: {{< github_stats type="followers" >}}
 - GitHub Repos: {{< github_stats type="repos" >}}
 - GitHub Sponsors: {{< github_stats type="sponsors" >}}
 
-# Links
+## Links
 
 [harshv5094@gmail.com](mailto:harshv5094@gmail.com)
 

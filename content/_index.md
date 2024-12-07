@@ -4,7 +4,7 @@ framed = true
 hideComments = true
 +++
 
-# hello world
+# Hello World
 
 My name is Harsh Vyapari. A.K.A @harshv5094. I do some Computer Stuff.
 
@@ -12,7 +12,7 @@ My name is Harsh Vyapari. A.K.A @harshv5094. I do some Computer Stuff.
 
 ---
 
-# Contact
+## Contact
 
 [harshv5094@gmail.com](mailto:harshv5094@gmail.com)
 
