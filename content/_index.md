@@ -18,4 +18,4 @@ My name is Harsh Vyapari. A.K.A @harshv5094. I do some Computer Stuff.
 
 [Resume](files/harsh-vyapari.pdf)
 
-[**See More**](/about)
+[**[See More]**](/about)
