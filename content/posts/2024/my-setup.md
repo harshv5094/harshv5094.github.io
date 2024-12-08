@@ -13,14 +13,14 @@ readingTime = false
 hideComments = false
 +++
 
-# My Setups
+## My Setups
 
-So as a first post to my blog, I'm sharing my configuration.<br/>
+So as a first post to my blog, I'm sharing my configuration.\
 This post is going to be updated regularly. Probably..
 
 ## Hyprland
 
-So this is my hyprland setup.<br/>
+So this is my hyprland setup.\
 The distro I'm using is archlinux.
 
 - [Source Code](https://github.com/harshv5094/hyprland)
