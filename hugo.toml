@@ -66,6 +66,10 @@ showLastUpdated = false
 [security.funcs]
 getenv = ["^HUGO_"]
 
+[services]
+[services.googleAnalytics]
+id = '$HUGO_GOOGLE_ANALYTICS_ID'
+
 [languages]
 [languages.en]
 languageName = "English"
