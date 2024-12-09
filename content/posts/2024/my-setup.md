@@ -31,4 +31,4 @@ To add more wallpapers just add wallpapers to `~/.config/hypr/wallpapers/` direc
 ## Screenshots
 
 ![hyprland screenshot 1](https://raw.githubusercontent.com/harshv5094/hyprland/refs/heads/main/docs/screenshot-1.png)
-![hyprland screenshot 2](https://raw.githubusercontent.com/harshv5094/hyprland/refs/heads/main/docs/screenshot-1.png)
+![hyprland screenshot 2](https://raw.githubusercontent.com/harshv5094/hyprland/refs/heads/main/docs/screenshot-2.png)
