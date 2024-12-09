@@ -17,7 +17,7 @@ The Website does not collect any personal information or use any trackers or coo
 ## Log Data
 
 Whenever you visit the Website, the information that your browser sends (the Log Data) to it is temporarily being stored by Google Analytics. explicitly for analytic purposes.\
-Please refer to Google's Privacy Policy: <https://policies.google.com/privacy>. This Log Data may include information such as your device’s Internet Protocol (“IP”) address, browser version, the time and date of your visit, the time spent on specific webpages, and other statistics.
+Please refer to Google's Privacy Policy: [Google Analytics Privacy Policy](https://support.google.com/analytics/answer/6004245?hl=en). This Log Data may include information such as your device’s Internet Protocol (“IP”) address, browser version, the time and date of your visit, the time spent on specific webpages, and other statistics.
 
 ## Third-Party Links
 
