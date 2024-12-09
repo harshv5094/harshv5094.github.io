@@ -68,7 +68,7 @@ getenv = ["^HUGO_"]
 
 [services]
 [services.googleAnalytics]
-id = '$HUGO_GOOGLE_ANALYTICS_ID'
+id = 'G-L8NZ5H3SGZ'
 
 [languages]
 [languages.en]
