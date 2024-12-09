@@ -25,4 +25,7 @@ The distro I'm using is archlinux.
 
 - [Source Code](https://github.com/harshv5094/hyprland)
 
+## Screenshots
+
 ![hyprland screenshot 1](https://raw.githubusercontent.com/harshv5094/hyprland/refs/heads/main/docs/screenshot-1.png)
+![hyprland screenshot 2](https://raw.githubusercontent.com/harshv5094/hyprland/refs/heads/main/docs/screenshot-1.png)
