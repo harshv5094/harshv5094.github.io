@@ -28,3 +28,10 @@ HUGO_ENABLEGITINFO = "true"
 from = "/npmjs/*"
 to = "/npmjs/"
 status = 200
+
+[[plugins]]
+package = "@netlify/plugin-lighthouse"
+
+# optional, deploy the lighthouse report to a path under your site
+[plugins.inputs.audits]
+output_path = "reports/lighthouse.html"
