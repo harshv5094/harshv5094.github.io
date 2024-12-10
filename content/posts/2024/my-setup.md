@@ -4,7 +4,7 @@ date = "2024-12-06T20:09:27+05:30"
 #dateFormat = "2006-01-02" # This value can be configured for per-post date formatting
 author = "Harsh Vyapari"
 authorTwitter = "harshv5094" #do not include @
-cover = "https://raw.githubusercontent.com/harshv5094/hyprland/refs/heads/main/docs/screenshot-2.png"
+cover = "images/2024/my-setup/hyprland-screenshot-2.webp"
 tags = [ "wayland", "xorg", "linux"]
 keywords = ["harshv5094", "harsh vyapari", "hyprland", "setup"]
 description = "My linux desktop setup. Commonly known as rice."
@@ -30,5 +30,5 @@ To add more wallpapers just add wallpapers to `~/.config/hypr/wallpapers/` direc
 
 ## Screenshots
 
-![hyprland screenshot 1](https://raw.githubusercontent.com/harshv5094/hyprland/refs/heads/main/docs/screenshot-1.png)
-![hyprland screenshot 2](https://raw.githubusercontent.com/harshv5094/hyprland/refs/heads/main/docs/screenshot-2.png)
+![hyprland screenshot 1](images/2024/my-setup/hyprland-screenshot-1.webp)
+![hyprland screenshot 2](images/2024/my-setup/hyprland-screenshot-2.webp)
