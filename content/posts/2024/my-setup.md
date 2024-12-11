@@ -22,9 +22,9 @@ This post is going to be updated regularly. Probably..
 
 So this is my hyprland setup.\
 The distro I'm using is archlinux.\
-My Setup contains 2 default wallpapers, just press `SUPER+W` to change between them.\
+Just press `SUPER+W` to change between them.\
 My wallpaper keybinding both changes `hyprpaper` and `hyprlock` wallpapers.\
-To add more wallpapers just add wallpapers to `~/.config/hypr/wallpapers/` directory, after running `setup.sh`.
+To add more wallpapers just add wallpapers to `~/Pictures/Wallpapers/` directory, after running `setup.sh`.
 
 - [Source Code](https://github.com/harshv5094/hyprland)
 
