@@ -1,3 +1,12 @@
+/*
+* Gruvbox Dark
+* reference link: https://raw.githubusercontent.com/gruvbox-community/gruvbox-contrib/master/kitty/gruvbox-dark.conf
+* */
+
+/*
+* NOTE: Reference: https://www.github.com/bashbunni/bashbunni.github.io/blob/main/main.css
+* */
+
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
 * {
@@ -5,4 +14,104 @@
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 500;
   color: #ebdbb2;
+}
+
+body {
+  min-height: 95dvh;
+  padding: 1rem;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  display: inline-block;
+  font-size: inherit;
+  padding: 0 0.5em;
+  margin-bottom: 0;
+  background-color: #458588;
+  color: #ebdbb2;
+}
+
+a {
+  color: #d65d0e;
+  text-decoration: none;
+}
+
+footer {
+  color: #83a598;
+  margin-top: auto;
+}
+
+.text-background {
+  color: #d65d0e;
+}
+
+.text-secondary {
+  color: #d79921;
+}
+
+.bluesky:hover {
+  color: #458588;
+}
+
+.github:hover {
+  color: #8ec07c;
+}
+
+.cursor {
+  color: #bdae93;
+}
+
+.output {
+  width: 100%;
+  max-width: 80ch;
+  animation: fade 5s;
+}
+
+.typeme {
+  width: 26ch;
+  animation: typing 2s steps(26) forwards, blink 1s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 10px solid #bdae93;
+}
+
+
+/* animation */
+
+@keyframes fade {
+  0% {
+    opacity: 0
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 26ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media(min-width: 600px) {
+  body {
+    font-size: 1.25rem;
+  }
 }
