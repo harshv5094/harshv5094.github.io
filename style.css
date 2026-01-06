@@ -11,10 +11,10 @@
 
 * {
   --char-width: 26ch;
-  background: #282828;
+  background: #fbf1c7;
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 500;
-  color: #ebdbb2;
+  color: #3c3836;
 }
 
 body {
@@ -31,7 +31,7 @@ h3 {
   padding: 0 0.5em;
   margin-bottom: 0;
   background-color: #d65d0e;
-  color: #eeeeee;
+  color: #ebdbb2;
 }
 
 a {
@@ -40,7 +40,7 @@ a {
 }
 
 footer {
-  color: #83a598;
+  color: #3c3836;
   margin-top: auto;
 }
 
@@ -53,7 +53,7 @@ footer {
 }
 
 .link:hover {
-  color: #eeeeee;
+  color: #282828;
 }
 
 .output {
@@ -106,5 +106,41 @@ footer {
 @media(min-width: 600px) {
   body {
     font-size: 1.25rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  * {
+    background: #282828;
+    color: #ebdbb2;
+  }
+
+  h3 {
+    background-color: #d65d0e;
+    color: #eeeeee;
+  }
+
+  a {
+    color: #d65d0e;
+  }
+
+  footer {
+    color: #fbf1c7;
+  }
+
+  .text-background {
+    color: #d65d0e;
+  }
+
+  .text-prompt {
+    color: #d79921;
+  }
+
+  .link:hover {
+    color: #eeeeee;
+  }
+
+  .typeme {
+    border-right: 10px solid #bdae93;
   }
 }
