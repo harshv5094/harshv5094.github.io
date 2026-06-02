@@ -8,7 +8,7 @@ tocOpen: false
 isStarred: false
 ---
 
-## So, Why I decided to move to `hugo`?
+## So, Why am I doing this?
 
 As you know my old side was just nothing but a single `index.html` with `style.css`.
 Shoutout to [bashbunni](https://github.com/harshv5094/bashbunni) for that.
@@ -19,13 +19,10 @@ As you can see, it's a simple website, It served me well, but I think it's time 
 
 ## Now, what should I choose?
 
-I wanted to dip my toes with blog writing and also want minimal static site template
+I wanted to dip my toes with blog writing and also want minimal static site template There were multiple static site generators like `jekyll`, `hugo` etc.
 
-There were multiple static site generators like `jekyll`, `hugo` etc.
+I was surfing the web, that's when I stumble upon the [Srirang's](https://shrirangkahale.com/) site and just fell love with that. So I decided to move to [hugo](https://gohugo.io) and [hugo-blog-awesome](https://github.com/hugo-sid/hugo-blog-awesome/).
 
-I was surfing the web, that's when I saw the [Srirang's](https://shrirangkahale.com/) site and just fell love with that template.
-So I decided to move to [hugo](https://gohugo.io) and [hugo-blog-awesome](https://github.com/hugo-sid/hugo-blog-awesome/)
-
-I've also seen [Chris](https://christitus.com) uses `hugo` for it's blog site. So it's became natural second choice.
+The main reason I decided to choose `hugo` is because of go templates, you can read and quickly understand it, I was interested in go for a while so it'll be a good chance to learn `go`.
 
 I'm goona write more soon so stay tuned!
