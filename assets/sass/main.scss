@@ -1,0 +1,92 @@
+//////////////// 1. Light Colors /////////////////
+$text-base-color: #3c3836;
+$text-link-blue: #076678;
+$text-link-blue-active: #af3a03;
+$bloquote-border: #bdae93;
+$blockquote-text: #504945;
+$inline-code-text: #3c3836;
+$inline-code-bg: #ebdbb2;
+$toc-bg: #f9f5d7;
+$go-top-bg: #d5c4a197;
+$go-top-bg-hover: #d5c4a1;
+
+$black: #282828;
+$light: #ebdbb2;
+$smoke: #d5c4a1;
+$gray: #928374;
+$white: #fbf1c7;
+
+//////////////// 2. Dark Colors /////////////////
+$dark-text-base-color: #ebdbb2;
+$dark-text-link-blue: #83a598;
+$dark-text-link-blue-active: #fe8019;
+$dark-bloquote-border: #7c6f64;
+$dark-blockquote-text: #a89984;
+$dark-inline-code-text: #ebdbb2;
+$dark-inline-code-bg: #3c3836;
+$dark-toc-bg: #3c3836;
+$dark-go-top-bg: #7c6f64b3;
+$dark-go-top-bg-hover: #7c6f64;
+
+$dark-black: #1d2021;
+$dark-white: #fbf1c7;
+$dark-light: #282828;
+$dark-smoke: #504945;
+$dark-gray: #928374;
+
+//////////////// 3. Fonts preferences /////////////////
+$sans-family: Roboto, sans-serif;
+$mono-family: Consolas, monospace;
+$base-font-size: 16px;
+$medium-font-size: $base-font-size * 0.938;
+$small-font-size: $base-font-size * 0.875;
+$base-line-height: 1.85;
+
+// Font weight
+// $light-weight: 300; // uncomment if necessary
+$normal-weight: 400;
+$bold-weight: 700;
+// $black-weight: 900; // uncomment if necessary
+
+//////////////// 4.Responsive design (media queries) /////////////////
+$wide-size: 890px;
+$narrow-size: 720px;
+
+// Padding unit
+$spacing-full: 30px;
+$spacing-half: $spacing-full / 2;
+
+// Screen sizes
+$on-mobile: 768px;
+$on-tablet: 769px;
+$on-desktop: 1024px;
+$on-widescreen: 1152px;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@mixin relative-font-size($ratio) {
+    font-size: $base-font-size * $ratio;
+}
+
+//////////////// 5. Import all sass files /////////////////
+
+@import "fonts";
+@import "base";
+@import "navbar";
+@import "layout";
+@import "post";
+@import "code";
+
+@import "tableOfContent";
+@import "miscellaneous";
+@import "dark";
+@import "listpage";
+@import "custom";
+
+{{ with .Site.Params.goToTop }}
+@import "goToTop";
+{{ end }}
