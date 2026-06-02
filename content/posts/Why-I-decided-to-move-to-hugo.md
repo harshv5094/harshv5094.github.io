@@ -26,3 +26,5 @@ I was surfing the web, that's when I stumble upon the [Srirang's](https://shrira
 The main reason I decided to choose `hugo` is because of go templates, you can read and quickly understand it, I was interested in go for a while so it'll be a good chance to learn `go`.
 
 I'm goona write more soon so stay tuned!
+
+~ Harsh Vyapari ✌️ 
