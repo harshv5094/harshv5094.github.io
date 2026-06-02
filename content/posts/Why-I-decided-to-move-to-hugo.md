@@ -11,7 +11,7 @@ isStarred: false
 ## So, Why am I doing this?
 
 As you know my old side was just nothing but a single `index.html` with `style.css`.
-Shoutout to [bashbunni](https://github.com/harshv5094/bashbunni) for that.
+Shoutout to [bashbunni](https://github.com/bashbunni) for that.
 
 ![My-Old-Website](/my-old-website.webp)
 
