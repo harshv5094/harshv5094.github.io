@@ -1,0 +1,9 @@
+---
+title: '{{ replace .File.ContentBaseName "-" " " | title }}'
+date: {{ .Date }}
+draft: true
+description:
+tocOpen: false
+toc: true
+isStarred: false
+---
