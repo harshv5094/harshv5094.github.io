@@ -10,7 +10,7 @@ isStarred: false
 
 ## So, Why am I doing this?
 
-As you know my old side was just nothing but a single `index.html` with `style.css`.
+As you know my old website was just nothing but a single `index.html` with `style.css`.
 Shoutout to [bashbunni](https://github.com/bashbunni) for that.
 
 ![My-Old-Website](/my-old-website.webp)
@@ -19,7 +19,7 @@ As you can see, it's a simple website, It served me well, but I think it's time 
 
 ## Now, what should I choose?
 
-I wanted to dip my toes with blog writing and also want minimal static site template There were multiple static site generators like `jekyll`, `hugo` etc.
+I wanted to dip my toes with blog writing and also want minimal static site template. There were multiple static site generators like `jekyll`, `hugo` etc.
 
 I was surfing the web, that's when I stumble upon the [Srirang's](https://shrirangkahale.com/) site and just fell love with that. So I decided to move to [hugo](https://gohugo.io) and [hugo-blog-awesome](https://github.com/hugo-sid/hugo-blog-awesome/).
 
