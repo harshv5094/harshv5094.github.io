@@ -66,10 +66,10 @@ defaultColor = "auto"      # set color mode: dark, light, auto
 # You can take a look at layouts/index.html for more information.
 description = "Personal site of Harsh Vyapari"
 mainSections = ['posts']
-toc = true                                     # set to false to disable table of contents 'globally'
-tocOpen = false                                # set to true to open table of contents by default
-goToTop = true                                 # set to false to disable 'go to top' button
-# additionalScripts = ['js/custom.js', 'js/custom-2.js']
+toc = true                                             # set to false to disable table of contents 'globally'
+tocOpen = false                                        # set to true to open table of contents by default
+goToTop = true                                         # set to false to disable 'go to top' button
+additionalScripts = ['js/custom.js', 'js/custom-2.js']
 # Will try to load 'assets/js/custom.js' and 'assets/js/custom-2.js'.
 # Your custom scripts will be concatenated to one file `custom.js`.
 # When building for production it will be minified.
@@ -102,9 +102,21 @@ display = "standalone"
 TileColor = "#2d89ef" # default windows 10 blue tile color
 
 [[params.socialIcons]]
+name = "email"
+url = "mailto:harshvy5094@proton.me"
+
+[[params.socialIcons]]
 name = "github"
 url = "https://github.com/harshv5094"
 
 [[params.socialIcons]]
 name = "twitter"
 url = "https://twitter.com/harshv5094"
+
+[[params.socialIcons]]
+name = "bluesky"
+url = "https://bsky.app/profile/harshv5094.bsky.social"
+
+[[params.socialIcons]]
+name = "mastodon"
+url = "https://mastodon.social/harshv5094"
