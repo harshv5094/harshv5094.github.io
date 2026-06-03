@@ -21,7 +21,7 @@ As you can see, it's a simple website, It served me well, but I think it's time 
 
 I wanted to dip my toes with blogging, technical writing. For that I wanted a website template with minimal design and flexibility to modify it on my preferences, I also wanted to use a static site generator. For a while, I've heard that they are easy to maintain, and let's you focus on your writing.
 
-I was surfing the web, that's when I stumble upon the [Srirang's](https://shrirangkahale.com/) site and just fell love with the. When I further researched about that, I found that he was using [hugo](https://gohugo.io) with [hugo-blog-awesome](https://github.com/hugo-sid/hugo-blog-awesome/). The template was so minimal, easy to maintain and had the flexibility that I was desperately searching for. So I decided to go with this.
+I was surfing the web, that's when I stumble upon [Srirang's](https://shrirangkahale.com/) site and just fell love with the. When I further researched about that, I found that he was using [hugo](https://gohugo.io) with [hugo-blog-awesome](https://github.com/hugo-sid/hugo-blog-awesome/). The template was so minimal, easy to maintain and had the flexibility that I was desperately searching for. So I decided to use this template as my new blog website.
 
 ## Needed some help, `Opencode` to the rescue
 
