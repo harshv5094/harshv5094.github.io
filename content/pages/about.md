@@ -1,27 +1,23 @@
 ---
 title: About
-description: 'About Harsh Vyapari'
+description: "Here you get to know who I am"
 draft: false
-toc: true
+toc: false
 tocOpen: false
 author: Harsh Vyapari
 url: /about/
 ---
 
-## Who am I?
+Namaste 🙏, My name is Harsh Vyapari. I'm just a simple computer nerd who loves FOSS and open source. My current daily driver operating system is archlinux with my custom hyprland config.
 
-Namaste 🙏, My name is Harsh Vyapari. I'm a computer nerd who just loves linux.
+Some of the things I've done as open source contributor is written below:
 
-## **What I do?**
+- I work on [linutil](https://github.com/ChrisTitusTech/linutil) as a contributor on my free time. I'm also responsible for maintaining their [aur](https://repology.org/project/linutil/versions) packages.
 
-- I work on [`linutil`](https://github.com/ChrisTitusTech/linutil) on my free time, I'm also co-maintain their aur packages.
+I'm a big **Japanese animation** movie lover with **Studio Ghibli** films being my favorite. Some of my favorite are, **Princess Mononoke**, **My Neighbor Totoro**, **Only Yesterday**, **The Wind Rises**, **Graveyard Fireflies**.
 
-## My GPG Keys
+> I'm gonna update this list in the future
 
-Public RSA sign key: [`525F AC3D 751C F169 E31C 0E43 A897 C10C 48C4 E722`](https://raw.githubusercontent.com/harshv5094/harshv5094/refs/heads/main/git-sign-public.asc)
+I'm also an avid music lover. Some of my genres I listen to are **J-pop**, **Qawalli** and some **Anime songs or OST**.
 
-## A short Haiku
-
-The grass is so green.<br/>
-The sky is a lovely blue.<br/>
-Linux broke again.<br/>
+I go by my alias `harshv5094` on the internet.
