@@ -38,7 +38,7 @@ I'm still working on linutil on my free time. Now, I'm their [aur](https://aur.a
 
 ## Lessons I've learned
 
-The biggest lesson I want you to take from my story is that, sometimes, you need to just start, no matter how messy is your code/life is, life will automatically correct your path and guide you to your destination.
+The biggest lesson I want you to take from my story is that, sometimes, you need to just start, no matter how messy is your code/life is, it will automatically correct your path and guide you to your destination.
 
 It also made me appreciate the works of maintainers, who voluntarily handles both the projects and their life simultaneously. It made me very considerate, that I should only make meaningful changes, which takes less time of them.
 
