@@ -1,5 +1,5 @@
 title = "Harsh Vyapari"
-baseURL = 'https://harshv5094.github.io'
+baseURL = 'https://harshv5094.github.io/'
 
 # This is what goes in <html lang="">
 languageCode = 'en-us'
@@ -128,4 +128,4 @@ url = "https://mastodon.social/@harshv5094"
 
 [[params.socialIcons]]
 name = "Rss"
-url = "/index.xml"
+url = "index.xml"
