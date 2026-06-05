@@ -42,6 +42,7 @@ The biggest lesson I want you to take from my story is that, sometimes, you need
 
 It also made me appreciate the works of maintainers, who voluntarily handles both the projects and their life simultaneously. It made me very considerate, that I should only make meaningful changes, which takes less time of them.
 
+---
 So, we've reached the conclusion of this blog, thanks for taking your time reading my yapping, and you can mail me to give me some feedbacks, I'd love to hear it.
 
 ~ Harsh Vyapari ✌️
