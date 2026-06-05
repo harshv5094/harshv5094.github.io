@@ -18,6 +18,7 @@ theme = "hugo-blog-awesome"
 [outputs]
 home = ["html", "rss", "json"]
 section = ["html", "rss", "json"]
+rss = ["rss"]
 taxonomy = ["html"]
 term = ["html"]
 
@@ -93,6 +94,7 @@ avatar = "avatar.jpg" # put the file in assets folder; also ensure that image ha
 # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
 intro = "Harsh Vyapari"
 name = "Harsh Vyapari"
+email = "harshvy5094@proton.me"
 description = "I'm just a simple computer nerd nothing else."
 
 # Allow to override webmanifest options
