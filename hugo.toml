@@ -1,5 +1,7 @@
 title = "Harsh Vyapari"
 baseURL = 'https://harshv5094.github.io/'
+enableRobotsTXT = true
+summaryLength = 30
 
 # This is what goes in <html lang="">
 languageCode = 'en-us'
@@ -14,8 +16,8 @@ ignoreErrors = [
 theme = "hugo-blog-awesome"
 
 [outputs]
-home = ["html"]
-section = ["html"]
+home = ["html", "rss", "json"]
+section = ["html", "rss", "json"]
 taxonomy = ["html"]
 term = ["html"]
 
