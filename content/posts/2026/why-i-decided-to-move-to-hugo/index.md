@@ -13,7 +13,7 @@ isStarred: false
 As you know my old website was just nothing but a single `index.html` with `style.css`.
 Shoutout to [bashbunni](https://github.com/bashbunni) for that.
 
-![My-Old-Website](/my-old-website.webp)
+![My-Old-Website](/img/2026/why-i-decided-to-move-to-hugo/my-old-website.webp)
 
 As you can see, it's a simple website, It served me well, but I think it's time to retire this buddy.
 
