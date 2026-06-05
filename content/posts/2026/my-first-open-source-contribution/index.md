@@ -4,7 +4,7 @@ date: 2026-06-05
 draft: false
 description: So as my first blog post, I'm talking about my first Open Source Contribution I've ever did.
 tocOpen: false
-toc: false
+toc: true
 isStarred: false
 ---
 
