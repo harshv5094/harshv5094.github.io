@@ -16,8 +16,8 @@ ignoreErrors = [
 theme = "hugo-blog-awesome"
 
 [outputs]
-home = ["html", "rss", "json"]
-section = ["html", "rss", "json"]
+home = ["html", "rss"]
+section = ["html", "rss"]
 rss = ["rss"]
 taxonomy = ["html"]
 term = ["html"]
