@@ -15,6 +15,10 @@ ignoreErrors = [
 # traditional way: theme component resides in directory 'themes'
 theme = "hugo-blog-awesome"
 
+[caches]
+[caches.images]
+dir = ':cacheDir/images'
+
 [outputs]
 home = ["html", "rss"]
 section = ["html", "rss"]
