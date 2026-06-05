@@ -125,3 +125,7 @@ url = "https://bsky.app/profile/harshv5094.bsky.social"
 [[params.socialIcons]]
 name = "mastodon"
 url = "https://mastodon.social/@harshv5094"
+
+[[params.socialIcons]]
+name = "Rss"
+url = "index.xml"
