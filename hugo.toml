@@ -119,12 +119,12 @@ name = "email"
 url = "mailto:harshvy5094@proton.me"
 
 [[params.socialIcons]]
-name = "github"
-url = "https://github.com/harshv5094"
-
-[[params.socialIcons]]
 name = "twitter"
 url = "https://twitter.com/harshv5094"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/harshv5094"
 
 [[params.socialIcons]]
 name = "bluesky"
