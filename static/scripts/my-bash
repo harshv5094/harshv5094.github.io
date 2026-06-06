@@ -4,10 +4,10 @@
 dependency_list=("bash" "curl")
 for package in "${dependency_list[@]}"; do
   if ! command -v "$package" &>/dev/null; then
-    echo -e "$package is not installed, please install it first"
+    printf "%b\n" "$package is not installed, please install it first"
     exit 1
   else
-    echo -e "$package is installed"
+    printf "%b\n" "$package is installed"
   fi
 done
 
@@ -16,18 +16,18 @@ my_bashrc="$HOME/.bashrc"
 if [[ -e $my_bashrc ]]; then
   printf "%b" "** Backing up $my_bashrc **"
   mv "$my_bashrc" "$my_bashrc.bak"
-  echo -e "** Downloading my bashrc config in $my_bashrc **"
+  printf "%b\n" "** Downloading my bashrc config in $my_bashrc **"
   if curl https://raw.githubusercontent.com/harshv5094/dotfiles/refs/heads/main/.bashrc -o "$my_bashrc"; then
-    echo -e "** Successfully downloaded my .bashrc in $my_bashrc **"
+    printf "%b\n" "** Successfully downloaded my .bashrc in $my_bashrc **"
   else
-    echo -e "** Failed to download .bashrc in $my_bashrc **"
+    printf "%b\n" "** Failed to download .bashrc in $my_bashrc **"
   fi
 else
-  echo -e "** Downloading my bashrc config in $my_bashrc **"
+  printf "%b\n" "** Downloading my bashrc config in $my_bashrc **"
   if curl https://raw.githubusercontent.com/harshv5094/dotfiles/refs/heads/main/.bashrc -o "$my_bashrc"; then
-    echo -e "** Successfully downloaded my .bashrc in $my_bashrc **"
+    printf "%b\n" "** Successfully downloaded my .bashrc in $my_bashrc **"
   else
-    echo -e "** Failed to download .bashrc in $my_bashrc **"
+    printf "%b\n" "** Failed to download .bashrc in $my_bashrc **"
   fi
 fi
 
@@ -36,18 +36,18 @@ my_inputrc="$HOME/.inputrc"
 if [[ -e $my_inputrc ]]; then
   printf "%b" "** Backing up $my_inputrc **"
   mv "$my_inputrc" "$my_inputrc.bak"
-  echo -e "** Downloading my inputrc config in $my_inputrc **"
+  printf "%b\n" "** Downloading my inputrc config in $my_inputrc **"
   if curl https://raw.githubusercontent.com/harshv5094/dotfiles/refs/heads/main/.inputrc -o "$my_inputrc"; then
-    echo -e "** Successfully downloaded my .inputrc in $my_inputrc **"
+    printf "%b\n" "** Successfully downloaded my .inputrc in $my_inputrc **"
   else
-    echo -e "** Failed to download .inputrc in $my_inputrc **"
+    printf "%b\n" "** Failed to download .inputrc in $my_inputrc **"
   fi
 else
-  echo -e "** Downloading my inputrc config in $my_inputrc **"
+  printf "%b\n" "** Downloading my inputrc config in $my_inputrc **"
   if curl https://raw.githubusercontent.com/harshv5094/dotfiles/refs/heads/main/.inputrc -o "$my_inputrc"; then
-    echo -e "** Successfully downloaded my .inputrc in $my_inputrc **"
+    printf "%b\n" "** Successfully downloaded my .inputrc in $my_inputrc **"
   else
-    echo -e "** Failed to download .inputrc in $my_inputrc **"
+    printf "%b\n" "** Failed to download .inputrc in $my_inputrc **"
   fi
 fi
 
@@ -59,42 +59,42 @@ starship_config() {
   y | Y)
 
     if [[ ! -d $HOME/.config ]]; then
-      echo -e "** Creating $HOME/.config **"
+      printf "%b\n" "** Creating $HOME/.config **"
       if mkdir -p "$HOME/.config/"; then
-        echo -e "** Successfully created $HOME/.config **"
+        printf "%b\n" "** Successfully created $HOME/.config **"
       fi
     fi
 
     my_starship="$HOME/.config/starship.toml"
     if [[ -e "$my_starship" ]]; then
-      echo -e "** Backing up $my_starship **"
+      printf "%b\n" "** Backing up $my_starship **"
       mv "$my_starship" "$my_starship.bak"
-      echo -e "** Downloading my starship config $my_starship **"
+      printf "%b\n" "** Downloading my starship config $my_starship **"
       if curl https://raw.githubusercontent.com/harshv5094/dotfiles/refs/heads/main/.config/starship.toml -o "$my_starship"; then
-        echo -e "** Starship file is downloaded. You need to install starship manually **"
+        printf "%b\n" "** Starship file is downloaded. You need to install starship manually **"
       else
-        echo -e "** Failed to download starship file **"
+        printf "%b\n" "** Failed to download starship file **"
       fi
     else
-      echo -e "** Downloading my starship config $my_starship **"
+      printf "%b\n" "** Downloading my starship config $my_starship **"
       if curl https://raw.githubusercontent.com/harshv5094/dotfiles/refs/heads/main/.config/starship.toml -o "$my_starship"; then
-        echo -e "** Starship file is downloaded. You need to install starship manually **"
+        printf "%b\n" "** Starship file is downloaded. You need to install starship manually **"
       else
-        echo -e "** Failed to download starship file **"
+        printf "%b\n" "** Failed to download starship file **"
       fi
     fi
     return
     ;;
   n | N)
-    echo -e "Skipping $HOME/.config/starship.toml ... "
+    printf "%b\n" "Skipping $HOME/.config/starship.toml ... "
     return
     ;;
   *)
-    echo -e "Please answer in (Y/N): "
+    printf "%b\n" "Please answer in (Y/N): "
     starship_config
     ;;
   esac
 }
 
 starship_config
-echo -e "Bash setup is finished"
+printf "%b\n" "Bash setup is finished"
