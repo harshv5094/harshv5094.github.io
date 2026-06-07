@@ -94,8 +94,8 @@ loginSetup() {
     target_dir="/etc/systemd/system/getty@tty1.service.d"
     target_file="$target_dir/override.conf"
     config_content="[Service]\nExecStart=\nExecStart=-/usr/bin/agetty --noreset --noclear --autologin ${SUDO_USER:-$USER} - \${TERM}"
-    [[ ! -d $target_dir ]] && $ESCALATION_TOOL mkdir -p "$target_dir"
-    printf "%b\n" "$config_content" | $ESCALATION_TOOL tee "$target_file"
+    [[ ! -d $target_dir ]] && "$ESCALATION_TOOL" mkdir -p "$target_dir"
+    printf "%b\n" "$config_content" | "$ESCALATION_TOOL" tee "$target_file"
 
     #shellcheck disable=SC2016
     bash_profile_content='[[ -f $HOME/.bashrc ]] && source "$HOME/.bashrc"\n\nif [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then\n  echo -e "Starting Hyprland....\n"\n  sleep 1\n  start-hyprland\nfi\n'
@@ -113,21 +113,21 @@ loginSetup() {
     managers=('sddm' 'gdm' 'lightdm' 'lxdm' 'lxdm-gtk3' 'mdm' 'nodm' 'xdm' 'entrance')
 
     for manager in "${managers[@]}"; do
-      if $ESCALATION_TOOL systemctl is-active --quiet "$manager.service"; then
+      if "$ESCALATION_TOOL" systemctl is-active --quiet "$manager.service"; then
         printf "%b\n\n" "* Disabling $manager... *"
-        $ESCALATION_TOOL systemctl disable "$manager"
+        "$ESCALATION_TOOL" systemctl disable "$manager"
       fi
     done
 
     printf "%b\n" "* Enabling Ly... *"
     # NOTE: https://codeberg.org/fairyglade/ly/releases/tag/v1.3.0
-    $ESCALATION_TOOL systemctl disable getty@tty2.service
-    $ESCALATION_TOOL systemctl enable ly@tty2.service
+    "$ESCALATION_TOOL" systemctl disable getty@tty2.service
+    "$ESCALATION_TOOL" systemctl enable ly@tty2.service
 
     printf "%b\n" "* Copying My Ly config files *"
     if [[ -d "/etc/ly/" ]]; then
-      [[ -f "/etc/ly/config.ini" ]] && $ESCALATION_TOOL mv /etc/ly/config.ini /etc/ly/config.ini.bak
-      $ESCALATION_TOOL cp -rf "${source_dirs}/hyprland/ly/config.ini" "/etc/ly/"
+      [[ -f "/etc/ly/config.ini" ]] && "$ESCALATION_TOOL" mv /etc/ly/config.ini /etc/ly/config.ini.bak
+      "$ESCALATION_TOOL" cp -rf "${source_dirs}/hyprland/ly/config.ini" "/etc/ly/"
     fi
 
     printf "%b\n" "* Ly setup complete! *"
@@ -142,20 +142,20 @@ loginSetup() {
 
   # Changing some grub settings
   if [[ -f /etc/default/grub ]]; then
-    $ESCALATION_TOOL cp /etc/default/grub /etc/default/grub.bak
+    "$ESCALATION_TOOL" cp /etc/default/grub /etc/default/grub.bak
     printf "** Tweaking Grub Settings **"
     if lsblk -no TYPE "$(findmnt -nvo SOURCE /)" | grep -q "crypt"; then
       printf "* Setting up plymouth for encrypted system *"
       $AUR_HELPER -S --noconfirm --needed plymouth
       if ! grep -q "splash" /etc/default/grub; then
-        $ESCALATION_TOOL sed -i 's/^GRUB_CMDLINE_LINUX_DEFAULT="\(.*\)"/GRUB_CMDLINE_LINUX_DEFAULT="\1 splash"/' /etc/default/grub
+        "$ESCALATION_TOOL" sed -i 's/^GRUB_CMDLINE_LINUX_DEFAULT="\(.*\)"/GRUB_CMDLINE_LINUX_DEFAULT="\1 splash"/' /etc/default/grub
       fi
     fi
-    $ESCALATION_TOOL sed -i 's/^GRUB_DEFAULT=.*/GRUB_DEFAULT=saved/' /etc/default/grub
-    $ESCALATION_TOOL sed -i 's/^#GRUB_DISABLE_SUBMENU=.*/GRUB_DISABLE_SUBMENU=y/' /etc/default/grub
-    $ESCALATION_TOOL sed -i 's/^#GRUB_SAVEDEFAULT=.*/GRUB_SAVEDEFAULT=true/' /etc/default/grub
+    "$ESCALATION_TOOL" sed -i 's/^GRUB_DEFAULT=.*/GRUB_DEFAULT=saved/' /etc/default/grub
+    "$ESCALATION_TOOL" sed -i 's/^#GRUB_DISABLE_SUBMENU=.*/GRUB_DISABLE_SUBMENU=y/' /etc/default/grub
+    "$ESCALATION_TOOL" sed -i 's/^#GRUB_SAVEDEFAULT=.*/GRUB_SAVEDEFAULT=true/' /etc/default/grub
     printf "* Generating Grub Config *"
-    $ESCALATION_TOOL grub-mkconfig -o /boot/grub/grub.cfg
+    "$ESCALATION_TOOL" grub-mkconfig -o /boot/grub/grub.cfg
   fi
 
   # Change tty fonts to terminus
@@ -210,8 +210,8 @@ installAndConfigureHyprland() {
   printf "** Enable systemctl multiple system services **"
   system_services=("cronie.service")
   for service in "${system_services[@]}"; do
-    if ! $ESCALATION_TOOL systemctl is-active --quiet "$service"; then
-      $ESCALATION_TOOL systemctl enable --now "$service"
+    if ! "$ESCALATION_TOOL" systemctl is-active --quiet "$service"; then
+      "$ESCALATION_TOOL" systemctl enable --now "$service"
     fi
   done
 }
