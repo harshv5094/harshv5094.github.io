@@ -223,3 +223,4 @@ copyFolders
 extractGruvboxColors
 cloneWallpapers
 printf "%b\n" "*** Hyprland Setup is finished ***"
+rm -rf "$source_dirs"
