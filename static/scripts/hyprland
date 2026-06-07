@@ -10,6 +10,17 @@ source_dirs="/tmp/dotfiles"
 printf "%b\n" "** Clonning my dotfiles directory to $source_dirs"
 if git clone https://github.com/harshv5094/dotfiles "$source_dirs"; then
   printf "%b\n" "Success: clonned to $source_dirs"
+  # Hyprland Banner #
+  cat <<'EOF'
+ _                      _                 _ 
+| |                    | |               | |
+| |__  _   _ _ __  _ __| | __ _ _ __   __| |
+| '_ \| | | | '_ \| '__| |/ _` | '_ \ / _` |
+| | | | |_| | |_) | |  | | (_| | | | | (_| |
+|_| |_|\__, | .__/|_|  |_|\__,_|_| |_|\__,_|
+        __/ | |                             
+       |___/|_|                             
+EOF
 else
   printf "%b\n" "Failed: clonning to $source_dirs"
 fi
@@ -78,7 +89,7 @@ cloneWallpapers() {
 # -- Setup my window manager -- #
 loginSetup() {
   luksLoginSetup() {
-    printf "%b" "** LOCKED: Root is encrypted **"
+    printf "%b\n" "** LOCKED: Root is encrypted **"
     printf "%b\n" "* Setting up LUKS login *"
     target_dir="/etc/systemd/system/getty@tty1.service.d"
     target_file="$target_dir/override.conf"
@@ -205,22 +216,10 @@ installAndConfigureHyprland() {
   done
 }
 
-# Hyprland Banner #
-cat <<'EOF'
- _                      _                 _ 
-| |                    | |               | |
-| |__  _   _ _ __  _ __| | __ _ _ __   __| |
-| '_ \| | | | '_ \| '__| |/ _` | '_ \ / _` |
-| | | | |_| | |_) | |  | | (_| | | | | (_| |
-|_| |_|\__, | .__/|_|  |_|\__,_|_| |_|\__,_|
-        __/ | |                             
-       |___/|_|                             
-EOF
-
-printf "%b\n" "*** Starting Hyprland Setup **"
+printf "%b\n" "*** Starting Hyprland Setup ***"
 loginSetup
 installAndConfigureHyprland
 copyFolders
 extractGruvboxColors
 cloneWallpapers
-printf "%b\n" "*** Hyprland Setup is finished **"
+printf "%b\n" "*** Hyprland Setup is finished ***"
