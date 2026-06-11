@@ -43,5 +43,5 @@ foreach ($pkg in $packages)
   winget install --id $pkg --silent --accept-package-agreements
 }
 
-Write-Host "Installing posix packages..."
+Write-Host "Installing posix packages..." -ForegroundColor Cyan
 winget install --id=BrechtSanders.WinLibs.POSIX.UCRT -e
