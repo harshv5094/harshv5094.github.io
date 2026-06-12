@@ -4,7 +4,7 @@ enableRobotsTXT = true
 summaryLength = 30
 
 # This is what goes in <html lang="">
-languageCode = 'en-us'
+locale = 'en-us'
 
 # Enable emojis globally
 enableEmoji = true
