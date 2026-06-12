@@ -27,6 +27,7 @@ $packages = @(
 
   #Media
   "VideoLAN.VLC",
+  "yt-dlp.yt-dlp",
 
   # Neovim and its dependencies
   "Neovim.Neovim",
