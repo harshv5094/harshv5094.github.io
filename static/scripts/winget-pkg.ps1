@@ -25,9 +25,12 @@ $packages = @(
   # Notebook app
   "Obsidian.Obsidian",
 
-  #Media
+  # Media
   "VideoLAN.VLC",
   "yt-dlp.yt-dlp",
+
+  # Download Manager
+  "SoftDeluxe.FreeDownloadManager"
 
   # Neovim and its dependencies
   "Neovim.Neovim",

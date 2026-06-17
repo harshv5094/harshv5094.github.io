@@ -40,6 +40,7 @@ function Install-Scoop
       "gsudo",
       "touch",
       "opencode"
+      "mpv"
     )
 
     foreach ($pkg in $packages)
