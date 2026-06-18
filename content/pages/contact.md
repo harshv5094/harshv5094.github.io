@@ -8,7 +8,7 @@ author: Harsh Vyapari
 url: /contact/
 ---
 
-I'm mostly offline, but I popup sometimes in social media, just click on the footer link to go there. If you want to contact me you can do it through my mail id
+I'm mostly offline, but I popup sometimes in social media, just click available in footer to visit my profile. If you want to have a personal conversation, I'm available through my email id.
 
 - [harshvy5094@proton.me](mailto:harshvy5094@proton.me)
 
