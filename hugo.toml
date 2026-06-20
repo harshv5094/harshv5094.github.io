@@ -123,6 +123,10 @@ name = "github"
 url = "https://github.com/harshv5094"
 
 [[params.socialIcons]]
+name = "twitter"
+url = "https://twitter.com/harshv5094"
+
+[[params.socialIcons]]
 name = "bluesky"
 url = "https://bsky.app/profile/harshv5094.bsky.social"
 
