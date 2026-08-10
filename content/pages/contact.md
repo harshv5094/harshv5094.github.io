@@ -5,6 +5,7 @@ draft: false
 toc: false
 tocOpen: false
 author: Harsh Vyapari
+exclude_from_rss: true
 url: /contact/
 ---
 
