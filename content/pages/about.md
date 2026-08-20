@@ -9,7 +9,7 @@ exclude_from_rss: true
 url: /about/
 ---
 
-Namaste 🙏, My name is Harsh Vyapari. I'm just a simple computer nerd who loves FOSS and open source. My current daily driver operating system is archlinux with my custom hyprland config.
+Namaste 🙏, My name is Harsh Vyapari. I'm just a simple computer nerd who loves FOSS and open source.
 
 Some of the things I've done as open source contributor is written below:
 
