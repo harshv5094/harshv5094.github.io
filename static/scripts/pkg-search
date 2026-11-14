@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+
+# pkg-search: a package search script on the distro's website
+# Version: v1.0.0
+# Author: Harsh Vyapari <@harshv5094>
+# LICENSE: MIT License
+
+TYPE=$1
+PACKAGE=$2
+
+if ! command -v xdg-open &>/dev/null; then
+  printf "%b\n" "pkg-search: xdg-open not found"
+  exit 1
+fi
+
+if [ $# -ne 2 ]; then
+  printf "%b\n" "Usage: pkg-search [distroname (eg: --arch)] [package-name]\n\nOptions:
+  --aur AUR Packages
+  --arch ArchLinux
+  --fedora Fedora
+  --debian Debian"
+  exit 1
+fi
+
+cat <<'EOF'
+______ _   _______   _____                     _     
+| ___ \ | / /  __ \ /  ___|                   | |    
+| |_/ / |/ /| |  \/ \ `--.  ___  __ _ _ __ ___| |__  
+|  __/|    \| | __   `--. \/ _ \/ _` | '__/ __| '_ \ 
+| |   | |\  \ |_\ \ /\__/ /  __/ (_| | | | (__| | | |
+\_|   \_| \_/\____/ \____/ \___|\__,_|_|  \___|_| |_|
+                                                     
+                                                     
+EOF
+
+printf "%b\n" "Searching for $PACKAGE..."
+sleep 1s
+
+case "$TYPE" in
+--aur)
+  xdg-open "https://aur.archlinux.org/packages?K=$PACKAGE"
+  ;;
+--arch)
+  xdg-open "https://archlinux.org/packages/?q=$PACKAGE"
+  ;;
+--fedora)
+  xdg-open "https://packages.fedoraproject.org/search?query=$PACKAGE"
+  ;;
+--debian)
+  xdg-open "https://packages.debian.org/search?keywords=$PACKAGE"
+  ;;
+*)
+  printf "%b\n" "pkg-search: Incorrect Option"
+  exit 1
+  ;;
+esac
