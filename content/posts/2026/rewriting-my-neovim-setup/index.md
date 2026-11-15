@@ -104,6 +104,6 @@ lsp/                     -> per-server LSP configs (vim.lsp.Config), auto-loaded
 
 I still have some future changes, but now my full transition for neovim is completed. So I [merge](https://github.com/harshv5094/dotfiles/pull/2) those changes in my main dotfiles. I'm liking this setup very much, it feels like that this is **My neovim configuration**, not using someone else dotfiles.
 
-So, that's it for the post, if you want to chat about it, my [mail](mailto:harshvy5094@proton.me) box always open, see you next time. Bye! 👋
+So, that's it for the post, if you want to chat about it, my [mail](mailto:harshv5094@gmail.com) box always open, see you next time. Bye! 👋
 
 ~ Harsh Vyapari ✌️

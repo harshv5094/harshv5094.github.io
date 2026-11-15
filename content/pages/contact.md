@@ -11,9 +11,7 @@ url: /contact/
 
 I'm mostly offline, but I popup sometimes in social media, just click available url in footer to visit my profile. If you want to have a personal conversation, I'm available through my email id.
 
-- [harshvy5094@proton.me](mailto:harshvy5094@proton.me)
-
-Don't worry it's still me. I lost my harshv5094 proton mail with recovery code, so I'm stuck with this email address.
+- [harshv5094@gmail.com](mailto:harshv5094@gmail.com)
 
 I'm also pasting my gpg public sign key so it's easy for people to verify my contributions.
 
