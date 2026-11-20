@@ -8,6 +8,8 @@ toc: true
 isStarred: false
 ---
 
+> **EDIT:** Made some new changes since I last time wrote this blog
+
 Hello 👋, it's been a while since I've written any blogpost here.
 
 So, it's been 5 months, i've kinda been busy with my personal life (as most people should be). I've also been tweaking my dotfiles(mostly cleanup) and removing old files that I don't need anymore. So I've also dropped my old [LazyVim](https://lazyvim.org) setup and rewritten it from scratch with builtin features like `vim.pack` and `vim.lsp`.
@@ -79,25 +81,27 @@ So, I took my problem to matrix neovim public group for discussion, and the lead
 
 So after, moving my whole setup to `vim.pack`, I started modifying and optimizing it for my needs.
 
-I removed some of the plugins like `lualine.nvim`, `gitsigns.nvim`, `snacks.nvim`. and replace them with [`mini.nvim`](https://github.com/nvim-mini/mini.nvim). This plugin fulfills the basic needs of every neovim plugins that I mentioned above. For a while I was using [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim) and [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim), I was quite happy with it, but I still wanted to reduce my plugin footprint between 40 to 50 or below 40 plugins. So I need to find another way about it.
+I removed some of the plugins like `lualine.nvim`, `gitsigns.nvim`, `snacks.nvim`, `telescope.nvim`. and replace them with [`mini.nvim`](https://github.com/nvim-mini/mini.nvim). This plugin fulfills the basic needs of every neovim plugins that I mentioned above. For a while I was using [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim) and [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim), I was quite happy with it, but I still wanted to reduce my plugin footprint between 40 to 50 or below 40 plugins. So I need to find another way about it.
 
 So, I decided, "Why not create a utility module for this operation!". So I fired my trusted [opencode](https://opencode.ai), and started buiding two modules name `toggle_terminal` and `toggle_lazygit`, and since I know how neovim buffer system works, it was quite an easy implementation.
 
 As so it happens, Takuya also dropped his new neovim setup with his markdown based MCP [dicsussion](https://www.devas.life/effective-neovim-setup-for-agentic-coding-towards-2027/), which made working with opencode a whole lot easier. It actually give me more control on AI's output, and this works surprisingly well.
 
+The LLM model I used for this setup is `DeepSeek V4.1 Flash Free` and surprisingly, it's very good and fast model. Just needed some proper instruction and voila! It takes cares of the rest by itself.
+
 So after doing all those changes my current setup structure looks something like this.
 
 ```
 init.lua                 -> entry point, loads config.base, also enables vim.loader based on version number
+plugin/                  -> Automatically imports plugin specs (one file per concern: lsp, ui, format, ...)
 lua/
   config/
-    base.lua             -> bootstraps my config files and imports plugin specs
+    init.lua             -> bootstraps my config files and imports plugin specs
     options.lua          -> vim options
     keymaps.lua          -> global + LSP keymaps
     autocmds.lua         -> autocommands (incl. LSP auto-enable)
     diagnostics.lua      -> vim.diagnostic config + virtual text toggle
     pack.lua             -> Custom nvim_user_commands for `vim.pack`
-  plugins/               -> plugin specs (one file per concern: lsp, ui, format, ...)
   utils/                 -> small helper modules
 lsp/                     -> per-server LSP configs (vim.lsp.Config), auto-loaded
 ```
