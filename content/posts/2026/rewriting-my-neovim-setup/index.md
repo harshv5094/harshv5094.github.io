@@ -26,7 +26,7 @@ So for my oblivious part of audience who don't know what is LazyVim, Let me Expl
 
 LazyVim is a neovim distro created by tpope of neovim, "[folke](https://github.com/folke)" (I'm not exaggerating, his plugin suite is very robust and solid). It's closer to an tui IDE, but you can customize this for your needs. The main goal of this project was to be feature rich but still be a performant text editor.
 
-In that sense, I can say that LazyVim has achieved it's goal, by being easy to use, community friendly on various stupid question thrown by the user, etc. I was daily driving LazyVim for the past 2 years, and it's been a blast, I love how polish and stylish it looks, how it's just one line away for enabling most of the language/debugger support.
+In that sense, I can say that LazyVim has achieved it's goal, by being easy to use, community friendly on various stupid question thrown by the user, etc. I was daily driving LazyVim for the past 3 years, and it's been a blast, I love how polish and stylish it looks, how it's just one line away for enabling most of the language/debugger support.
 
 But, I still felt that I've been using someone else dotfiles, it's like sitting behind a taxi driver, who takes you to your destination, but you still misses the feel of driving the car, following your own path, going random street, etc.
 
