@@ -93,10 +93,11 @@ The LLM model I used for this setup is `DeepSeek V4.1 Flash Free` and surprising
 
 So after doing all those changes my current setup structure looks something like this.
 
-> **EDIT:** Updated my plugin structure.
+> **EDIT:** Updated my plugin structure. Also my new plugin count is `29`
 
 ```
 init.lua                 -> entry point: enables vim.loader, sources options/autocmds/diagnostics/keymaps/pack, lists plugins for `vim.pack`
+colors/                  -> My custom gruvbox colorsheme is stored here
 lua/
   options.lua            -> vim options + globals (mapleader, netrw, undodir, ...)
   autocmds.lua           -> autocommands (incl. LSP auto-enable)
