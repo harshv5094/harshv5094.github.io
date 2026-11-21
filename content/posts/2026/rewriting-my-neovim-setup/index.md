@@ -62,6 +62,8 @@ I started using my new custom setup for like more than a month, and I was feelin
 
 So, neovim introduced [`vim.pack`](https://neovim.io/doc/user/pack/#vim.pack) from `v0.12`, it's a builtin package manager written by [mini.nvim](https://github.com/nvim-mini/mini.nvim) author [echasnovski](https://echasnovski.com). This module perfectly reflects mini.nvim philosophy, minimal but functional. It's still marked as in experimental phase, but, it's stable enough to be use as a daily driver feature.
 
+> **EDIT:** I used this [blog post](https://echasnovski.com/blog/2026-03-13-a-guide-to-vim-pack.html) as my reference material, so you can follow this for your setup.
+
 So, anyone who used `lazy.nvim` knows that the plugin structure is returning a table. See the following snippet as example.
 
 ```lua
