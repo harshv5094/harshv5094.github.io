@@ -93,18 +93,17 @@ The LLM model I used for this setup is `DeepSeek V4.1 Flash Free` and surprising
 
 So after doing all those changes my current setup structure looks something like this.
 
-> **EDIT:** Updated my plugin structure. Also my new plugin count is `29`
+> **EDIT:** Updated my plugin structure. Also my new plugin count is `31`
 
 ```
 init.lua                 -> entry point: enables vim.loader, sources options/autocmds/diagnostics/keymaps/pack, lists plugins for `vim.pack`
-colors/                  -> My custom gruvbox colorsheme is stored here
 lua/
   options.lua            -> vim options + globals (mapleader, netrw, undodir, ...)
   autocmds.lua           -> autocommands (incl. LSP auto-enable)
   diagnostics.lua        -> vim.diagnostic config + virtual text toggle
   keymaps.lua            -> global + LSP keymaps
   pack.lua               -> Custom nvim_user_commands for `vim.pack`
-  base.lua               -> terminal / lazygit helpers
+  tools.lua              -> Contains all my utilities and tools (lazygit, terminal, etc.)
   discipline.lua         -> hjkl throttle ("cowboy" mode)
   git.lua                -> git init helper
   icons.lua              -> icon glyph tables (nerd font symbols)
