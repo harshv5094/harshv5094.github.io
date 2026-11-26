@@ -14,5 +14,4 @@ I'm mostly offline, but I popup sometimes in social media, just click available 
 - [harshv5094@gmail.com](mailto:harshv5094@gmail.com)
 
 I'm also pasting my gpg public sign key so it's easy for people to verify my contributions.
-
 Public RSA sign key: [`525F AC3D 751C F169 E31C 0E43 A897 C10C 48C4 E722`](https://raw.githubusercontent.com/harshv5094/harshv5094/refs/heads/main/git-sign-public.asc)
